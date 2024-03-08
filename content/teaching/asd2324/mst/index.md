@@ -10,7 +10,7 @@ summary: "Minimum spanning trees"
 
 Considerare il seguente grafo non orientato:
 
-![image](image1.png)
+![image](featured1.png)
 
 1. Gli archi in grassetto possono rappresentare un albero di visita ottenuto mediante una **visita in profondità** del grafo? In caso affermativo specificare il **nodo di inizio** della visita, e rappresentare il grafo mediante **liste di adiacenza** in modo tale che l'ordine in cui compaiono gli elementi nelle liste consenta all'algoritmo DFS di produrre esattamente l'albero mostrato.
 
@@ -22,7 +22,7 @@ Considerare il seguente grafo non orientato:
 
 Scrivere un algoritmo efficiente per calcolare il numero di cammini minimi distinti che vanno da un nodo sorgente s a ciascun nodo u in un grafo non orientato G = (V, E) non pesato e connesso. Due cammini si considerano diversi se differiscono per almeno per un arco; si noti che esiste un cammino minimo (il cammino vuoto) dal nodo s a se stesso. Applicare l'algoritmo al grafo seguente:
 
-![image2](image2.png)
+![image2](featured2.png)
 
 # Esercizio 4
 

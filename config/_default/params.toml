@@ -1,11 +1,12 @@
 colorScheme = "noir"
-defaultAppearance = "light"
+defaultAppearance = "dark"
 autoSwitchAppearance = true
 enableSearch = true
 enableCodeCopy = false
 disableImageOptimization = false
 disableTextInHeader = false
 highlightCurrentMenuArea = true
+mainSections = ["projects"]
 
 [header]
 layout = "basic"
@@ -19,7 +20,7 @@ showScrollToTop = true
 
 [homepage]
 layout = "profile"
-showRecent = false
+showRecent = true
 showRecentItems = 5
 showMoreLink = false
 showMoreLinkDest = "/posts"
@@ -45,15 +46,15 @@ seriesOpened = false
 showHeadingAnchors = true
 showPagination = true
 invertPagination = false
-showReadingTime = false
+showReadingTime = true
 showTableOfContents = false
-showTaxonomies = false
+showTaxonomies = true
 showAuthorsBadges = false
-showWordCount = false
-showZenMode = false
+showWordCount = true
+showZenMode = true
 
 [list]
-showHero = false
+showHero = true
 layoutBackgroundBlur = true
 layoutBackgroundHeaderSpace = true
 showBreadcrumbs = false

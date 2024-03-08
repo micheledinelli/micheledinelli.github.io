@@ -1,9 +1,10 @@
 ---
-title: "Wifind"
-description: ""
-cascade:
-  showReadingTime: false
+title: "wifind"
+description: "Wifi finger-printing cli tool"
 date: 2024-03-01
+showSummary: true
+summary: Wifi finger-printing cli tool
+tags: ["wifi finger-printing", "ai"]
 ---
 
 Wifind is a cli tool that performs wifi finger-printing. It uses machine learning to predict your positions given samples collected during offline stage.

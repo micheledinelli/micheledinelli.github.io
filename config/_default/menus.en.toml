@@ -15,4 +15,21 @@ identifier = "FNA5ZZOwoj"
 weight = 3
 
 [[footer]]
-none = "none"
+  name = "tags"
+  pageRef = "tags"
+  weight = 1
+
+[[footer]]
+  name = "teaching"
+  pageRef = "teaching"
+  weight = 2
+
+[[footer]]
+  name = "projects"
+  pageRef = "projects"
+  weight = 3
+
+[[footer]]
+  name = "about"
+  pageRef = "about"
+  weight = 4
