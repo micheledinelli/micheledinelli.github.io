@@ -1,0 +1,17 @@
+[[main]]
+none = "none"
+
+[[main]]
+name = "teaching"
+pageRef = "teaching"
+identifier = "5c9PTVm2Rg"
+weight = 2
+
+[[main]]
+name = "about"
+pageRef = "about"
+identifier = "FNA5ZZOwoj"
+weight = 3
+
+[[footer]]
+none = "none"
