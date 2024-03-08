@@ -1,11 +1,12 @@
 [[main]]
-none = "none"
-
+  name = "teaching"
+  pageRef = "teaching"
+  weight = 1
+  
 [[main]]
-name = "teaching"
-pageRef = "teaching"
-identifier = "5c9PTVm2Rg"
-weight = 2
+  name = "projects"
+  pageRef = "projects"
+  weight = 2
 
 [[main]]
 name = "about"
