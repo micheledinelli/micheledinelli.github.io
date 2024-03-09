@@ -35,6 +35,6 @@ jobs:
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GH_TOKEN }}"
-          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_MICHELEDINELLI_D6D0D }}"
           channelId: live
-          projectId: blowfish-tutorial
+          projectId: micheledinelli-d6d0d
