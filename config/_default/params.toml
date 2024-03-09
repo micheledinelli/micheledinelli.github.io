@@ -1,4 +1,4 @@
-colorScheme = "noir"
+colorScheme = "slate"
 defaultAppearance = "dark"
 autoSwitchAppearance = true
 enableSearch = true
@@ -9,7 +9,7 @@ highlightCurrentMenuArea = true
 mainSections = ["projects"]
 
 [header]
-layout = "basic"
+layout = "fixed"
 
 [footer]
 showMenu = true

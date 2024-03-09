@@ -28,4 +28,4 @@ wifind predict -p
 wifind clear
 ```
 
-[github repo](https://github.com/micheledinelli/wifind)
+{{< github repo="micheledinelli/wifind" >}}
