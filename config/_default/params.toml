@@ -54,7 +54,7 @@ showWordCount = true
 showZenMode = true
 
 [list]
-showHero = true
+showHero = false
 layoutBackgroundBlur = true
 layoutBackgroundHeaderSpace = true
 showBreadcrumbs = false
@@ -64,7 +64,7 @@ showLikes = false
 showTableOfContents = false
 showCards = false
 groupByYear = true
-cardView = false
+cardView = true
 cardViewScreenWidth = false
 constrainItemsWidth = false
 

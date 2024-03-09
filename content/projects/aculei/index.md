@@ -11,4 +11,6 @@ Aculei is an AI driven photo archive. It show hunter cameras photos took automat
 
 {{< github repo="micheledinelli/aculei-ai" >}}
 
-[live here](https://aculei.xyz)
+[paper here](https://drive.google.com/file/d/1aJPbHsFUKlRXWCtu9vfiDBtc7OOQf5Ai/view?usp=drive_link)
+
+[see it live here](https://aculei.xyz)

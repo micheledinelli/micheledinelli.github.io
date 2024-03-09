@@ -10,3 +10,5 @@ tags: ["sentiment analysis", "reddit", "thesis"]
 Thesis work. Sentiment Analysis performed on Reddit subdreddits on two diseases: ibd and ibs.
 
 {{< github repo="micheledinelli/ibd-ibs-sentiment-analysis" >}}
+
+[paper here](https://amslaurea.unibo.it/27888/)

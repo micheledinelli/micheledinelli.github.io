@@ -1,6 +1,4 @@
 ---
 title: "Teaching"
-description: ""
-cascade:
-  showReadingTime: false
+description: "Teaching section"
 ---

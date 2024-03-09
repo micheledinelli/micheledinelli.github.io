@@ -1,8 +1,12 @@
 ---
-title: "Minimum Spanning Trees"
+title: "Graph exercises"
 description: ""
-summary: "Minimum spanning trees"
+summary: "Graph exercises"
+tags: ["graph theory"]
+date: 2024-03-09
 ---
+
+This is lecture's content for Bachelor's degree in Computer Science and Management. These are exercises on graph data structures.
 
 # Esercizio 2
 
