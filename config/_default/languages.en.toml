@@ -13,5 +13,5 @@ dateFormat = "2 January 2006"
 name = "Michele Dinelli"
 image = "avatar.png"
 headline = "MSc student and teaching tutor"
-links = [ { email = "mailto:m.dinelli@unibo.it" }, { github = "https://github.com/micheledinelli" }, { gitlab = "https://gitlab.com/micheledinelli" }, { linkedin = "https://linkedin.com/in/michele-dinelli" }, { twitter = "https://twitter.com/michele_dinelli" } ]
+links = [ { email = "mailto:m.dinelli@unibo.it" }, { github = "https://github.com/micheledinelli" }, { gitlab = "https://gitlab.com/micheledinelli" }, { linkedin = "https://linkedin.com/in/michele-dinelli" }, { twitter = "https://twitter.com/michele_dinelli" }, { graduation-cap = "https://www.unibo.it/sitoweb/m.dinelli"} ]
 bio = "Michele Dinelli"
