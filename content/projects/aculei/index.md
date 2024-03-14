@@ -7,7 +7,7 @@ summary: Ai driven photo archive
 tags: ["computer vision", "zero-shot image classification", "ai"]
 ---
 
-Aculei is an AI driven photo archive. It show hunter cameras photos took automatically in an Umbria forest.
+Aculei is an AI driven photo archive. It shows hunter cameras photos took automatically in an Umbria forest.
 
 {{< github repo="micheledinelli/aculei-ai" >}}
 

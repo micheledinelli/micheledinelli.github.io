@@ -7,7 +7,7 @@ summary: Wifi finger-printing cli tool
 tags: ["wifi finger-printing", "ai"]
 ---
 
-Wifind is a cli tool that performs wifi finger-printing. It uses machine learning to predict your positions given samples collected during offline stage.
+Wifind is a cli tool that performs wifi finger-printing. It uses machine learning to predict positions given some samples collected during offline stage.
 
 ```sh
 # learn current location labelling it as kitchen
