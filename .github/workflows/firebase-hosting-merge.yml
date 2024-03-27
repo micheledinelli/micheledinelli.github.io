@@ -40,4 +40,4 @@ jobs:
           projectId: micheledinelli-d6d0d
     environment:
       name: firebase
-      url: ${{ steps.deploy.outputs.details_url }}
+      url: ${{ steps.deployments.outputs.details_url }}
