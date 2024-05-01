@@ -2,7 +2,7 @@
 title: "Graph exercises"
 description: ""
 summary: "Graph exercises"
-tags: ["graph theory"]
+tags: ["graph theory", "algorithms and data structures"]
 date: 2024-03-09
 showTableOfContents: true
 ---
@@ -51,7 +51,7 @@ Ad esempio, consideriamo la situazione seguente in cui i nodi x, y, z si trovano
 
 È possibile calcolare il valore c[v] per ogni nodo v mano a mano che il grafo viene visitato. Si pone inizialmente c[v] ← 0 per ogni v, ad eccezione della sorgente s per cui si pone c[s] ← 1 in quanto esiste un solo cammino minimo (il cammino vuoto) dalla sorgente a se stessa. Ogni volta che l'algoritmo BFS attraversa l'arco non orientato {u, v} che conduce dal nodo u ad un nodo v a distanza d[v] = d[u] + 1, si imposta c[v] ← c[v] + c[u].
 
-```
+```java
 CONTACAMMINIMINIMI( grafo G = (V, E), nodo s )
     integer d[1..n], c[1..n]
     integer u, v;
@@ -92,7 +92,7 @@ Un camion di peso P si trova sull'isola s (sorgente) e deve raggiungere l'isola 
 
 Utilizziamo un algoritmo di visita in ampiezza modificato opportunamente per evitare di attraversare i ponti che non sosterrebbero il peso P.
 
-```
+```java
 ATTRAVERSAISOLE( real W[1..n, 1..n], real P, integer s, integer d ) → integer
     integer parent[1..n], dist[1..n];
     Queue Q;
