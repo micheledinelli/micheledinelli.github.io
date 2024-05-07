@@ -13,7 +13,7 @@ showTableOfContents: true
 
 Per chiedermi qualcosa è possibile contattarmi via mail e le domande rilevanti verranno inserite in questo documento.
 
-Per chi se la sente è possibile aprire una Pull Request. Per farlo basta cliccare il pulsante edit in cima al documento. Sarete reindirizzati al progetto su github dove potrete editare questo file markdown aggiungendo la vostra domanda. Aprite una Pull Request che se accettata apparirà sul sito 😄
+Per chi se la sente è possibile aprire una Pull Request. Per farlo basta cliccare il pulsante edit in cima al documento. Sarete reindirizzati al progetto su github dove potrete editare questo file markdown aggiungendo la vostra domanda. Effettuate il fork della repository, editate il file e aprite una Pull Request che se accettata apparirà sul sito 😄
 
 ### Cosa significa l'opzione `-cp`?
 
