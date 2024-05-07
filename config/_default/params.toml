@@ -41,6 +41,7 @@ layoutBackgroundHeaderSpace = true
 showBreadcrumbs = false
 showDraftLabel = true
 showEdit = false
+editUrl = "https://github.com/micheledinelli/micheledinelli.github.io/blob/main/content/"
 editAppendPath = true
 seriesOpened = false
 showHeadingAnchors = true
