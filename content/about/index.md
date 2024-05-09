@@ -12,4 +12,7 @@ Big fan of mangas and chess. Huge fan of One Piece, waiting every week for the n
 
 I have [Erdös number](https://en.wikipedia.org/wiki/Paul_Erd%C5%91s#Erd%C5%91s_number) `5` via [Zingaro](https://cs.unibo.it/~zingaro/) to [Martini](//www.cs.unibo.it/~martini/index.html) to [Scedrov](//www.cis.upenn.edu/~scedrov/) to [Blass](//www.math.lsa.umich.edu/~ablass/) to [Erdös](//en.wikipedia.org/wiki/Paul_Erd%C5%91s)
 
+## Tweet selection
+
 {{< twitter user="yuricodesbot" id="1693042765645353436" >}}
+{{< twitter user="memecrashes" id="1731812460355563777" >}}
