@@ -17,17 +17,17 @@ Si consideri il grafo orientato G = (V, E), ai cui archi sono associati costi po
 
 Applicare "manualmente" l'algoritmo di Dijkstra per calcolare un albero dei cammini di costo minimo partendo dal nodo sorgente s. Mostrare il risultato finale dell'algoritmo di Dijkstra, inserendo all'interno di ogni nodo la distanza minima da s, ed evidenziando opportunamente (ad esempio, cerchiando il valore del costo) gli archi che fanno parte dell'albero dei cammini di costo minimo.
 
-<!-- ### Soluzione
+### Soluzione
 
-![image](sol-es-1.png) -->
+![image](sol-es-1.png)
 
 ## Esercizio 2
 
 Una rete stradale è descritta da un grafo orientato pesato G = (V, E, w). Per ogni arco (u, v), la funzione costo w(u, v) indica la quantità di carburante (in litri) che è necessario consumare per percorrere la strada che va da u a v. Tutti i costi sono strettamente positivi. Un veicolo ha il serbatoio in grado di contenere C litri di carburante, inizialmente completamente pieno. Non sono presenti distributori di carburante. Scrivere un algoritmo efficiente che, dati in input il grafo pesato G, la quantità C di carburante inizialmente presente nel serbatoio, e due nodi s e d, restituisce true se e solo se esiste un cammino che consente al veicolo di raggiungere d partendo da s, senza esaurire il carburante durante il tragitto.
 
-<!-- ### Soluzione
+### Soluzione
 
-È sufficiente eseguire l'algoritmo di Dijkstra e calcolare il vettore D[v] delle distanze minime dalla sorgente s a ogni nodo v raggiungibile da s, utilizzando il consumo di carburante come peso. È possibile interrompere l'esecuzione dell'algoritmo di Dijkstra appena si raggiunge d oppure si supera il costo C. L'algoritmo restituisce true se e solo se si raggiunge d e non si è superato C. -->
+È sufficiente eseguire l'algoritmo di Dijkstra e calcolare il vettore D[v] delle distanze minime dalla sorgente s a ogni nodo v raggiungibile da s, utilizzando il consumo di carburante come peso. È possibile interrompere l'esecuzione dell'algoritmo di Dijkstra appena si raggiunge d oppure si supera il costo C. L'algoritmo restituisce true se e solo se si raggiunge d e non si è superato C.
 
 ## Esercizio 3
 
@@ -39,14 +39,14 @@ Si consideri un grafo orientato pesato, composto dai nodi {A, B, C, D, E}, la cu
 2. Determinare la distanza minima di ciascun nodo dal nodo sorgente A. Quale degli algoritmi visti a
    lezione può essere impiegato?
 
-<!-- ### Soluzione
+### Soluzione
 
 ![image](sol-es-3.0.png)
 
 Si nota come l'arco (D, C) abbia peso negativo; quindi per calcolare le distanze minime non è possibile usare l'algoritmo di Dijkstra, e si deve ricorrere ad esempio all'algoritmo di Bellman-Ford. Le iterazioni dell'algoritmo sono indicate nel seguito (i nodi in grigio sono quelli la cui distanza cambia):
 
 ![image](sol-es-3.1.png)
-![image](sol-es-3.2.png) -->
+![image](sol-es-3.2.png)
 
 ## Esercizio 4
 
@@ -68,7 +68,7 @@ Tree DIJKSTRAGENERICO( grafo G = (V, E), nodo s )
 
 2. Determinare il costo computazionale della variante dell'algoritmo di Dijkstra descritta al punto 1. Specificare quale struttura dati viene usata per rappresentare il grafo.
 
-<!-- ### Soluzione
+### Soluzione
 
 Supponiamo che, per ogni vertice v, la distanza tra la sorgente s e v sia indicata con l'attributo v.d; possiamo quindi scrivere la variante dell'algoritmo di Dijkstra come segue:
 
@@ -109,7 +109,7 @@ Il costo di DIJKSTRACONLISTE è O(n^2), essendo n il numero di nodi del grafo. N
 
 3. Il corpo del ciclo foreach viene eseguito in tutto O(m) volte durante l'intera esecuzione dell'algoritmo. Notiamo infatti che ogni arco del grafo viene visitato esattamente una volta.
 
-Combinando quanto sopra, il costo dell'algoritmo è O(n^2) + O(m) = O(n^2), dato che in un grafo si ha sempre m = O(n^2) (perché il massimo numero di archi di un grafo orientato è n(n - 1) ). -->
+Combinando quanto sopra, il costo dell'algoritmo è O(n^2) + O(m) = O(n^2), dato che in un grafo si ha sempre m = O(n^2) (perché il massimo numero di archi di un grafo orientato è n(n - 1) ).
 
 By **Jocelyne Elias** and **Moreno Marzolla**
 
