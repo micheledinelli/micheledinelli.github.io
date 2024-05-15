@@ -47,7 +47,7 @@ Supponiamo di avere n ≥ 1 oggetti, ciascuno etichettato con un numero da 1 a n
 1. Scrivere un algoritmo basato sul paradigma greedy che, dato il vettore dei pesi p[1..n] e il valore C, restituisce il numero di scatoloni che vengono utilizzati.
 2. Calcolare il costo computazionale dell'algoritmo proposto.
 
-<!-- ### Soluzione
+### Soluzione
 
 Un algoritmo greedy molto semplice consiste nel considerare tutti gli oggetti, nell'ordine in cui sono dati. Per ogni oggetto, si controlla se può essere inserito nello scatolone corrente senza superare il limite di peso. Se ciò non è possibile, si prende un nuovo scatolone e lo si inizia a riempire.
 
@@ -77,7 +77,7 @@ L'algoritmo qui sopra è molto efficiente, ma piuttosto "stupido": è facile pen
 3. si ordinano gli oggetti per pesi decrescenti, in ogni scatola si inserisce ad ogni turno l'elemento più
    pesante che ci sta
 
-Si vede facilmente che la complessità del primo algoritmo è O(n^2) e quella del secondo è Ο (n log n). Anche la complessità del terzo algoritmo è Ο(n log n), usando un red-black tree per memorizzare i pesi. Un confronto preciso tra le qualità delle soluzioni proposte dai diversi algoritmi è molto complesso, visto che si deve considerare una distribuzione di probabilità per i valori ed eseguire ragionamenti probabilistici. -->
+Si vede facilmente che la complessità del primo algoritmo è O(n^2) e quella del secondo è Ο (n log n). Anche la complessità del terzo algoritmo è Ο(n log n), usando un red-black tree per memorizzare i pesi. Un confronto preciso tra le qualità delle soluzioni proposte dai diversi algoritmi è molto complesso, visto che si deve considerare una distribuzione di probabilità per i valori ed eseguire ragionamenti probabilistici.
 
 By **Jocelyne Elias** and **Moreno Marzolla**
 
