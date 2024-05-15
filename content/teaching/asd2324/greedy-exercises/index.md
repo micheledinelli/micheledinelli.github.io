@@ -16,7 +16,7 @@ Siete stati assunti alla Microsoft per lavorare alla prossima versione di Word, 
 1. Scrivere un algoritmo efficiente che, dato in input il vettore w[1], ..., w[n], e i valori S e L, stampi una suddivisione delle parole che minimizza lo spazio inutilizzato in ciascuna riga. Ad esempio, supponendo di avere 15 parole, l'algoritmo potrebbe stampare la stringa "[1 3][4 8][9 15]" per indicare che la prima riga contiene le parole da 1 a 3 (incluse), la seconda le parole da 4 a 8, e la terza le parole da 9 a 15.
 2. Analizzare il costo computazionale dell'algoritmo proposto.
 
-<!-- ### Soluzione
+### Soluzione
 
 È possibile risolvere il problema con un semplice algoritmo greedy: si inseriscono in ciascuna riga le parole, nell'ordine indicato, finché non si supera la lunghezza massima consentita. Utilizziamo la variabile start per indicare l'indice della prima parola della riga corrente; Lres è la lunghezza residua (ancora da riempire) dalla riga corrente.
 
@@ -38,7 +38,7 @@ algoritmo FORMATTAPARAGRAFO( array w[1..n] di int, int S, int L )
     print “[“ + start + “ “ + n + “]”;
 ```
 
-Si noti la stampa effettuata al termine del ciclo “for”, senza la quale l'algoritmo non verrebbero stampate le parole dell'ultima riga. Il costo dell'algoritmo è O(n). -->
+Si noti la stampa effettuata al termine del ciclo “for”, senza la quale l'algoritmo non verrebbero stampate le parole dell'ultima riga. Il costo dell'algoritmo è O(n).
 
 ## Esercizio 4
 
