@@ -1,13 +1,15 @@
 ---
 title: "wifind"
-description: "Wifi finger-printing cli tool"
+description: "Wifi finger-printing cli tool."
 date: 2024-03-01
 showSummary: true
-summary: Wifi finger-printing cli tool
+summary: Wifi finger-printing cli tool.
 tags: ["wifi finger-printing", "ai", "cli"]
 ---
 
 Wifind is a cli tool that performs wifi finger-printing. It uses machine learning to predict positions given some samples collected during offline stage.
+
+Tell it wifi access points around you and it will tell yuo where you are.
 
 ```sh
 # learn current location labelling it as kitchen
