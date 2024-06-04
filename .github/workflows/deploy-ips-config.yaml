@@ -1,0 +1,30 @@
+name: Deploy ips-config
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Checkout ips-config repository
+        uses: actions/checkout@v2
+        with:
+          repository: micheledinelli/ips-config
+          path: public/ips-config
+
+      - name: Deploy Hugo site
+        run: |
+          hugo
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          cd public
+          git add .
+          git commit -m "Deploy site"
+          git push origin gh-pages --force
