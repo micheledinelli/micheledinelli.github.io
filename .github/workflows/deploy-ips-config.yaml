@@ -12,11 +12,13 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          submodules: true
 
       - name: Checkout ips-config repository
         uses: actions/checkout@v2
         with:
-          repository: micheledinelli/ips-config
+          repository: yourusername/ips-config
           path: ips-config
 
       - name: Set up Hugo
@@ -40,4 +42,4 @@ jobs:
           git init
           git add .
           git commit -m "Deploy site"
-          git push --force "https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" master:gh-pages
+          git push --force "https://${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git" master:gh-pages
