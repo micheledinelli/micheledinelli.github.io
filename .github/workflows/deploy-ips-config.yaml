@@ -27,11 +27,17 @@ jobs:
       - name: Build Hugo site
         run: hugo
 
+      - name: Copy ips-config content
+        run: |
+          mkdir -p public/ips-config
+          cp -r ips-config/* public/ips-config/
+
       - name: Deploy to GitHub Pages
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           cd public
+          git init
           git add .
           git commit -m "Deploy site"
-          git push origin gh-pages --force
+          git push --force "https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" master:gh-pages
