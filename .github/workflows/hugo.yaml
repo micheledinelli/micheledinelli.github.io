@@ -47,16 +47,16 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
-      - name: Checkout ips-config repository
-        uses: actions/checkout@v2
-        with:
-          repository: micheledinelli/ips-config
-          path: ips-config
+      # - name: Checkout ips-config repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: micheledinelli/ips-config
+      #     path: ips-config
 
-      - name: Copy ips-config content
-        run: |
-          mkdir -p content/ips-config
-          cp -r ips-config/* content/ips-config/
+      # - name: Copy ips-config content
+      #   run: |
+      #     mkdir -p content/ips-config
+      #     cp -r ips-config/* content/ips-config/
 
       - name: Setup Pages
         id: pages
