@@ -18,7 +18,7 @@ jobs:
       - name: Checkout ips-config repository
         uses: actions/checkout@v2
         with:
-          repository: yourusername/ips-config
+          repository: micheledinelli/ips-config
           path: ips-config
 
       - name: Set up Hugo
