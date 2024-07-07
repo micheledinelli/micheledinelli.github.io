@@ -3,7 +3,7 @@ title: "aculei"
 description: "Ai driven photo archive"
 date: 2024-02-01
 showSummary: true
-summary: Ai driven photo archive
+summary: Ai driven photo archive of hunter cameras photograps
 tags: ["computer vision", "zero-shot image classification", "ai"]
 ---
 
