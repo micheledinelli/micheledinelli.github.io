@@ -2,7 +2,11 @@
 title: "About"
 description: "About me"
 groupByYear: false
+showHero: true
+heroStyle: background
 ---
+
+[{{< icon "link" >}} Curriculum vitae](https://michele-dinelli-cv.puter.site)
 
 I am a 23 years old graduated student, currently a MSc student in Computer Science @unibo.
 
@@ -14,5 +18,8 @@ I have [Erdös number](https://en.wikipedia.org/wiki/Paul_Erd%C5%91s#Erd%C5%91s_
 
 ## Tweet selection
 
-{{< twitter user="yuricodesbot" id="1693042765645353436" >}}
-{{< twitter user="memecrashes" id="1731812460355563777" >}}
+{{< twitter user="Hamptonism" id="1815121236944449975" >}}
+{{< twitter user="_renyuan" id="1780760479545372733" >}}
+
+<!-- {{< twitter user="yuricodesbot" id="1693042765645353436" >}} -->
+<!-- {{< twitter user="memecrashes" id="1731812460355563777" >}} -->

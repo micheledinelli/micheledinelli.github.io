@@ -127,5 +127,3 @@ ATTRAVERSAISOLE( real W[1..n, 1..n], real P, integer s, integer d ) → integer
 ```
 
 By **Jocelyne Elias** and **Moreno Marzolla**
-
-See also: [pdf version of this file](https://drive.google.com/file/d/125v-4dyBAHK25r5TzVWa8Q8S8TLEgvi4/view?usp=drive_link)

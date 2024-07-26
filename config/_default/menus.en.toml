@@ -1,15 +1,15 @@
 [[main]]
-  name = "teaching"
+  name = "Teaching"
   pageRef = "teaching"
   weight = 1
   
 [[main]]
-  name = "projects"
+  name = "Projects"
   pageRef = "projects"
   weight = 2
 
 [[main]]
-name = "about"
+name = "About"
 pageRef = "about"
 identifier = "FNA5ZZOwoj"
 weight = 3

@@ -22,9 +22,9 @@ showScrollToTop = true
 [homepage]
 layout = "background"
 showRecent = true
-showRecentItems = 5
-showMoreLink = false
-showMoreLinkDest = "/posts"
+showRecentItems = 9
+showMoreLink = true
+showMoreLinkDest = "/projects"
 cardView = true
 cardViewScreenWidth = false
 layoutBackgroundBlur = false
