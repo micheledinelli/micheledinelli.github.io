@@ -9,7 +9,7 @@ tags: ["computer graphics", "webgl"]
 
 My room in 3D built with WebGL and Javascript
 
-![screenshot](featured-1.png)
+![screenshot](featured.png)
 
 {{< github repo="micheledinelli/computer-graphics" >}}
 
