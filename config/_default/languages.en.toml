@@ -12,6 +12,6 @@ dateFormat = "2 January 2006"
 [author]
 name = "Michele Dinelli"
 image = "avatar.png"
-headline = "MSc student, teaching tutor and research fellow @unibo. <br /> Intern @cubbit."
-links = [ { email = "mailto:m.dinelli@unibo.it" }, { github = "https://github.com/micheledinelli" }, { gitlab = "https://gitlab.com/micheledinelli" }, { linkedin = "https://linkedin.com/in/michele-dinelli" }, { x-twitter = "https://twitter.com/michele_dinelli" }, { graduation-cap = "https://www.unibo.it/sitoweb/m.dinelli"} ]
+headline = "MSc student, teaching tutor and research fellow [@unibo](https://www.unibo.it). <br /> Intern [@cubbit](https://cubbit.io)."
+links = [ { email = "mailto:dinellimichele00@gmail.com" }, { github = "https://github.com/micheledinelli" }, { gitlab = "https://gitlab.com/micheledinelli" }, { linkedin = "https://linkedin.com/in/michele-dinelli" }, { x-twitter = "https://twitter.com/michele_dinelli" }, { graduation-cap = "https://www.unibo.it/sitoweb/m.dinelli"} ]
 bio = ""
