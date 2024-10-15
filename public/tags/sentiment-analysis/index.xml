@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sentiment Analysis on micheledinelli</title>
-    <link>http://localhost:1313/tags/sentiment-analysis/</link>
+    <link>http://localhost:60703/tags/sentiment-analysis/</link>
     <description>Recent content in Sentiment Analysis on micheledinelli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Michele Dinelli</copyright>
-    <lastBuildDate>Fri, 31 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/sentiment-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:60703/tags/sentiment-analysis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ibd-ibs sentiment analysis</title>
-      <link>http://localhost:1313/projects/ibd-ibs/</link>
+      <link>http://localhost:60703/projects/ibd-ibs/</link>
       <pubDate>Fri, 31 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/ibd-ibs/</guid>
+      <guid>http://localhost:60703/projects/ibd-ibs/</guid>
       <description>Sentiment Analysis performed on subreddits about autoimmune diseases</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/projects/ibd-ibs/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:60703/projects/ibd-ibs/featured.png" />
     </item>
     
   </channel>

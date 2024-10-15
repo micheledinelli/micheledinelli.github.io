@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zero-Shot Image Classification on micheledinelli</title>
-    <link>http://localhost:1313/tags/zero-shot-image-classification/</link>
+    <link>http://localhost:60703/tags/zero-shot-image-classification/</link>
     <description>Recent content in Zero-Shot Image Classification on micheledinelli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Michele Dinelli</copyright>
-    <lastBuildDate>Thu, 01 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/zero-shot-image-classification/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:60703/tags/zero-shot-image-classification/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>aculei</title>
-      <link>http://localhost:1313/projects/aculei/</link>
+      <link>http://localhost:60703/projects/aculei/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/aculei/</guid>
+      <guid>http://localhost:60703/projects/aculei/</guid>
       <description>Ai driven photo archive</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/projects/aculei/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:60703/projects/aculei/featured.png" />
     </item>
     
   </channel>

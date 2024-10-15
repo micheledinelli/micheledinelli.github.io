@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Graph Theory on micheledinelli</title>
-    <link>http://localhost:1313/tags/graph-theory/</link>
+    <link>http://localhost:60703/tags/graph-theory/</link>
     <description>Recent content in Graph Theory on micheledinelli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Michele Dinelli</copyright>
-    <lastBuildDate>Sat, 09 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/graph-theory/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:60703/tags/graph-theory/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Graph exercises</title>
-      <link>http://localhost:1313/teaching/asd2324/graph-exercises/</link>
+      <link>http://localhost:60703/teaching/asd2324/graph-exercises/</link>
       <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/teaching/asd2324/graph-exercises/</guid>
+      <guid>http://localhost:60703/teaching/asd2324/graph-exercises/</guid>
       <description>Graph exercises</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/teaching/asd2324/graph-exercises/featured1.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:60703/teaching/asd2324/graph-exercises/featured1.png" />
     </item>
     
   </channel>

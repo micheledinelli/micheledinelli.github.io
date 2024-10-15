@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Algorithms and Data Structures on micheledinelli</title>
-    <link>http://localhost:1313/tags/algorithms-and-data-structures/</link>
+    <link>http://localhost:60703/tags/algorithms-and-data-structures/</link>
     <description>Recent content in Algorithms and Data Structures on micheledinelli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Michele Dinelli</copyright>
-    <lastBuildDate>Tue, 30 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/algorithms-and-data-structures/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:60703/tags/algorithms-and-data-structures/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Shortest path exercises</title>
-      <link>http://localhost:1313/teaching/asd2324/shortest-path-exercises/</link>
+      <link>http://localhost:60703/teaching/asd2324/shortest-path-exercises/</link>
       <pubDate>Tue, 30 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/teaching/asd2324/shortest-path-exercises/</guid>
+      <guid>http://localhost:60703/teaching/asd2324/shortest-path-exercises/</guid>
       <description>Graph exercises</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/teaching/asd2324/shortest-path-exercises/featured1.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:60703/teaching/asd2324/shortest-path-exercises/featured1.png" />
     </item>
     
     <item>
       <title>Greedy exercises</title>
-      <link>http://localhost:1313/teaching/asd2324/greedy-exercises/</link>
+      <link>http://localhost:60703/teaching/asd2324/greedy-exercises/</link>
       <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/teaching/asd2324/greedy-exercises/</guid>
+      <guid>http://localhost:60703/teaching/asd2324/greedy-exercises/</guid>
       <description>Greedy exercises</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/teaching/asd2324/greedy-exercises/featured1.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:60703/teaching/asd2324/greedy-exercises/featured1.png" />
     </item>
     
     <item>
       <title>Graph exercises</title>
-      <link>http://localhost:1313/teaching/asd2324/graph-exercises/</link>
+      <link>http://localhost:60703/teaching/asd2324/graph-exercises/</link>
       <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/teaching/asd2324/graph-exercises/</guid>
+      <guid>http://localhost:60703/teaching/asd2324/graph-exercises/</guid>
       <description>Graph exercises</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/teaching/asd2324/graph-exercises/featured1.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:60703/teaching/asd2324/graph-exercises/featured1.png" />
     </item>
     
     <item>
       <title>Algorithms and Data Structures 23/24</title>
-      <link>http://localhost:1313/teaching/asd2324/</link>
+      <link>http://localhost:60703/teaching/asd2324/</link>
       <pubDate>Fri, 08 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/teaching/asd2324/</guid>
+      <guid>http://localhost:60703/teaching/asd2324/</guid>
       <description></description>
       
     </item>

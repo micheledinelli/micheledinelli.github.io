@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Webgl on micheledinelli</title>
-    <link>http://localhost:1313/tags/webgl/</link>
+    <link>http://localhost:60703/tags/webgl/</link>
     <description>Recent content in Webgl on micheledinelli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Michele Dinelli</copyright>
-    <lastBuildDate>Mon, 01 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/webgl/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:60703/tags/webgl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>wiwt</title>
-      <link>http://localhost:1313/projects/wiwt/</link>
+      <link>http://localhost:60703/projects/wiwt/</link>
       <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/wiwt/</guid>
+      <guid>http://localhost:60703/projects/wiwt/</guid>
       <description>Where I wrote this. My room in 3D built with WebGL</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/projects/wiwt/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:60703/projects/wiwt/featured.png" />
     </item>
     
   </channel>
