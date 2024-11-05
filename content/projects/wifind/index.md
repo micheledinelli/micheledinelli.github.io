@@ -1,17 +1,18 @@
 ---
 title: "wifind"
-description: "Radio fingerprinting command-line application"
+description: ""
 date: 2024-03-01
-showSummary: true
 summary: Radio fingerprinting command-line application
-tags: ["wifi fingerprinting", "unsupervised learning", "cli"]
+tags: ["python", "radio fingerprinting", "cli application", "machine learning"]
 ---
 
-Wifind is a cli tool that performs wifi finger-printing. It uses machine learning to predict positions given some samples collected during offline stage.
+`wifind` is a command line application that performs radio (wifi) finger-printing. It collects access points signal strengths and uses a machine learning model to predict positions given collected samples.
 
-Tell it wifi access points around you and it will tell yuo where you are.
+![screenshot](screenshot.png)
 
-```sh
+## Some available commands
+
+```console
 # learn current location labelling it as kitchen
 wifind learn -r kitchen
 
@@ -23,11 +24,31 @@ wifind rooms
 wifind predict
 # kitchen
 
+wifind --watch
+# 2024-06-08 12:31:24 - kitchen
+# 2024-06-08 12:31:27 - bedroom
+# 2024-06-08 12:31:31 - bedroom
+# 2024-06-08 12:31:35 - bedroom
+
 wifind predict -p
 # {'kitchen': 0.68, 'bedroom': 0.32}
 
 # clears data
 wifind clear
 ```
+
+## Installation
+
+If you have `pip` installed simply run
+
+```console
+pip install wifind
+```
+
+and you are ready to go
+
+## Repository
+
+Repository on [`GitHub`](https://github.com/micheledinelli/wifind)
 
 {{< github repo="micheledinelli/wifind" >}}

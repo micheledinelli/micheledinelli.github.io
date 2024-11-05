@@ -1,4 +1,7 @@
 ---
 title: "Projects"
-description: "Learn about some of my projects."
+description: "Some of my projects."
+cardView: true
 ---
+
+Here are some of my projects. Most of them are on [`GitHub {{< icon "github" >}}`](https://github.com/micheledinelli)

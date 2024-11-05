@@ -5,6 +5,7 @@ date: 2023-03-31
 showSummary: true
 summary: Sentiment Analysis performed on subreddits about autoimmune diseases
 tags: ["sentiment analysis", "reddit", "thesis"]
+draft: true
 ---
 
 Thesis work. Sentiment Analysis performed on four Reddit subdreddits about two diseases: Inflammatory Bowel Disease (IBD) and Irritable Bowel Syndrome (IBS).

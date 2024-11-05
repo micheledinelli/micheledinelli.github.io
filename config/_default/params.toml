@@ -1,13 +1,16 @@
 colorScheme = "mich"
 defaultAppearance = "dark"
-autoSwitchAppearance = true
+autoSwitchAppearance = false
 enableSearch = true
-enableCodeCopy = false
-disableImageOptimization = false
+enableCodeCopy = true
+mainSections = ["projects"]
+showViews = false
+showLikes = false
+robots = "all"
 disableTextInHeader = false
 highlightCurrentMenuArea = true
-mainSections = ["projects"]
-# defaultBackgroundImage = "background.png"
+smartTOC = true
+smartTOCHideUnfocusedChildren = true
 
 [header]
 layout = "fixed"
@@ -22,76 +25,35 @@ showScrollToTop = true
 [homepage]
 layout = "profile"
 showRecent = true
-showRecentItems = 9
-showMoreLink = false
-showMoreLinkDest = "/projects"
-cardView = false
-cardViewScreenWidth = false
-layoutBackgroundBlur = false
-# homepageImage = "background.png"
+showRecentItems = 5
+cardView = true
 
 [article]
 showDate = false
-showViews = false
-showLikes = false
-showDateOnlyInArticle = false
-showDateUpdated = false
-showAuthor = true
-showHero = false
-layoutBackgroundBlur = true
-layoutBackgroundHeaderSpace = true
-showBreadcrumbs = false
-showDraftLabel = true
-showEdit = false
+showAuthor = false
+showBreadcrumbs = true
+showDraftLabel = false
+showEdit = true
 editUrl = "https://github.com/micheledinelli/micheledinelli.github.io/blob/main/content/"
 editAppendPath = true
-seriesOpened = false
-showHeadingAnchors = true
-showPagination = true
-invertPagination = false
-showReadingTime = true
-showTableOfContents = false
-showTaxonomies = true
-showAuthorsBadges = false
 showWordCount = true
 showZenMode = true
+# sharingLinks = ["twitter", "linkedin", "reddit", "email"]
 
 [list]
-showHero = false
-layoutBackgroundBlur = true
-layoutBackgroundHeaderSpace = true
-showBreadcrumbs = false
-showSummary = false
-showViews = false
-showLikes = false
-showTableOfContents = false
-showCards = false
-groupByYear = true
-cardView = false
-cardViewScreenWidth = false
-constrainItemsWidth = false
+layoutBackgroundBlur = false
+layoutBackgroundHeaderSpace = false
+showBreadcrumbs = true
+showSummary = true
+orderByWeight = true
+groupByYear = false
 
 [sitemap]
 excludedKinds = [ "taxonomy", "term" ]
 
 [taxonomy]
-showTermCount = true
-showHero = false
-showBreadcrumbs = false
-showViews = false
-showLikes = false
-showTableOfContents = false
-cardView = false
 
 [term]
-showHero = false
-showBreadcrumbs = false
-showViews = false
-showLikes = false
-showTableOfContents = true
-groupByYear = false
-cardView = false
-cardViewScreenWidth = false
 
 [firebase]
 

@@ -12,6 +12,7 @@ tags:
     "docker",
     "kubernetes",
   ]
+draft: true
 ---
 
 A set of containerized application that manages room access grants using WiFi fingerprints, implementing an Indoor Positioning System (IPS).
