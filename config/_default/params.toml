@@ -1,4 +1,4 @@
-colorScheme = "ocean"
+colorScheme = "mich"
 defaultAppearance = "dark"
 autoSwitchAppearance = true
 enableSearch = true
@@ -7,7 +7,7 @@ disableImageOptimization = false
 disableTextInHeader = false
 highlightCurrentMenuArea = true
 mainSections = ["projects"]
-defaultBackgroundImage = "background.png"
+# defaultBackgroundImage = "background.png"
 
 [header]
 layout = "fixed"
@@ -20,7 +20,7 @@ showAppearanceSwitcher = true
 showScrollToTop = true
 
 [homepage]
-layout = "background"
+layout = "profile"
 showRecent = true
 showRecentItems = 9
 showMoreLink = false
@@ -28,7 +28,7 @@ showMoreLinkDest = "/projects"
 cardView = false
 cardViewScreenWidth = false
 layoutBackgroundBlur = false
-homepageImage = "background.png"
+# homepageImage = "background.png"
 
 [article]
 showDate = false
