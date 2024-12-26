@@ -3,7 +3,7 @@
 My personal website made with [`hugo`](https://hugo.io) and [`blowfish`](https://blowfish.page)
 
 <div>
-    <img width="600px" src="assets/hero.png">
+    <img width="600px" src="assets/hero.webp">
 </div>
 
 <!-- [![Deploy to pages](https://github.com/micheledinelli/micheledinelli.github.io/actions/workflows/hugo.yaml/badge.svg)](https://github.com/micheledinelli/micheledinelli.github.io/actions/workflows/hugo.yaml) -->
