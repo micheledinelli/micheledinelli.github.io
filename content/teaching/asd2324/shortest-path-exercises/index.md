@@ -1,9 +1,10 @@
 ---
 title: "Shortest path exercises"
 description: ""
-summary: "Graph exercises"
+summary: "Lecture content containing excercises on shortest path problem."
 tags: ["shortest path problem", "algorithms and data structures"]
 date: 2024-04-30
+showDate: true
 showTableOfContents: true
 ---
 

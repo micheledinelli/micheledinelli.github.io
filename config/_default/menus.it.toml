@@ -1,0 +1,27 @@
+[[main]]
+  name = "Teaching"
+  pageRef = "teaching"
+  weight = 1
+  
+[[main]]
+  identifier = "github"
+  pre = "github"
+  url = "https://github.com/micheledinelli"
+  weight = 4
+
+[[main]]
+  identifier = "twitter"
+  pre = "x-twitter"
+  url = "https://twitter.com/michele_dinelli"
+  weight = 5
+
+[[footer]]
+  name = "tags"
+  pageRef = "tags"
+  weight = 1
+
+[[footer]]
+  identifier = "github"
+  pre = "github"
+  url = "https://github.com/micheledinelli"
+  weight = 2

@@ -1,34 +1,40 @@
 ---
 title: "Greedy exercises"
-description: ""
-summary: "Greedy exercises"
+description: "Greedy exercises"
+summary: "Lecture content containing excercises to practice greedy algorithms."
 tags: ["greedy algorithms", "algorithms and data structures"]
 date: 2024-04-29
+showDate: true
 showTableOfContents: true
 ---
 
-This is lecture's content for Bachelor's degree in Computer Science and Management. These are exercises on greedy algorithms.
+{{< katex >}}
 
-## Esercizio 3
+This is lecture's content for Bachelor's degree in computer science for management @unibo. These are exercises on greedy algorithms.
 
-Siete stati assunti alla Microsoft per lavorare alla prossima versione di Word, denominata Word 2030. Il problema che dovete risolvere è il seguente. È data una sequenza di n parole, le cui lunghezze (espresse in punti tipografici, numeri interi) sono memorizzate nel vettore w[1], ..., w[n]. È necessario suddividere le parole in righe di lunghezza massima pari a L punti tipografici, in modo che lo spazio non utilizzato in ciascuna riga sia minimo possibile. Tra ogni coppia di parole consecutive posizionate sulla stessa riga viene inserito uno spazio che occupa S punti tipografici; nessuno spazio viene inserito dopo l'ultima parola di ogni riga. La lunghezza del testo su ogni riga è quindi data dalla somma delle lunghezze delle parole e degli spazi di separazione. L è maggiore della lunghezza di ogni singola parola (quindi in ogni riga può sempre essere inserita almeno una parola). Non è possibile riordinare le parole, che devono comparire esattamente nell'ordine dato.
+## Exercise 1
 
-1. Scrivere un algoritmo efficiente che, dato in input il vettore w[1], ..., w[n], e i valori S e L, stampi una suddivisione delle parole che minimizza lo spazio inutilizzato in ciascuna riga. Ad esempio, supponendo di avere 15 parole, l'algoritmo potrebbe stampare la stringa "[1 3][4 8][9 15]" per indicare che la prima riga contiene le parole da 1 a 3 (incluse), la seconda le parole da 4 a 8, e la terza le parole da 9 a 15.
-2. Analizzare il costo computazionale dell'algoritmo proposto.
+You have been hired by Microsoft to work on the next version of Word, called `Word 2030`. The problem you need to solve is as follows:
 
-### Soluzione
+Given a sequence of \\( n \\) words, whose lengths (expressed in typographic points, integers) are stored in the array \\( w[1], \ldots, w[n] \\), the goal is to divide the words into lines of maximum length \\( L \\) typographic points, so that the unused space in each line is minimized. Between every pair of consecutive words placed on the same line, a space is inserted, which occupies \\( S \\) typographic points; no space is added after the last word of each line. The length of the text on each line is therefore given by the sum of the lengths of the words and the separating spaces. \\( L \\) is greater than the length of any single word (hence, at least one word can always be placed on each line). The words cannot be reordered and must appear in the given sequence.
 
-È possibile risolvere il problema con un semplice algoritmo greedy: si inseriscono in ciascuna riga le parole, nell'ordine indicato, finché non si supera la lunghezza massima consentita. Utilizziamo la variabile start per indicare l'indice della prima parola della riga corrente; Lres è la lunghezza residua (ancora da riempire) dalla riga corrente.
+1. Write an efficient algorithm that, given as input the array \\( w[1], \ldots, w[n] \\), and the values \\( S \\) and \\( L \\), prints a division of the words that minimizes the unused space in each line. For example, assuming there are 15 words, the algorithm could print the string `[1 3][4 8][9 15]` to indicate that the first line contains words from 1 to 3 (inclusive), the second line contains words from 4 to 8, and the third line contains words from 9 to 15.
+2. Analyze the computational cost of the proposed algorithm.
+
+
+### Solution
+
+The problem can be solved using a simple greedy algorithm: words are added to each line, in the given order, until the maximum allowed length is exceeded. We use the variable `start` to indicate the index of the first word of the current line, and `Lres` to represent the remaining length (still available) for the current line.
 
 ```java
-algoritmo FORMATTAPARAGRAFO( array w[1..n] di int, int S, int L )
+algorithm formatParagraph( array w[1..n] of int, int S, int L )
     int start := 1;
     int Lres := L - w[1];
 
     for i := 2 to n do
-        if ( Lres ≥ S + w[i]) then // aggiungiamo la parola i-esima alla riga corrente
+        if ( Lres ≥ S + w[i]) then // add the i-th word to the current line
             Lres := Lres – S - w[i];
-        else // iniziamo una nuova riga
+        else // start a new line
             print “[“ + start + “ “ + (i-1) + “]”;
             start := i;
             Lres := L - w[i];
@@ -38,26 +44,26 @@ algoritmo FORMATTAPARAGRAFO( array w[1..n] di int, int S, int L )
     print “[“ + start + “ “ + n + “]”;
 ```
 
-Si noti la stampa effettuata al termine del ciclo “for”, senza la quale l'algoritmo non verrebbero stampate le parole dell'ultima riga. Il costo dell'algoritmo è O(n).
+Notice the print statement at the end of the `for` loop; without it, the algorithm would not print the words for the last line. The computational cost of the algorithm is \\( O(n) \\).
 
-## Esercizio 4
+## Exercise 2
 
-Supponiamo di avere n ≥ 1 oggetti, ciascuno etichettato con un numero da 1 a n;. l'oggetto i-esimo ha peso p[i] > 0. Questi oggetti vanno inseriti all'interno di scatoloni identici, disponibili in numero illimitato, ciascuno in grado di contenere un numero arbitrario di oggetti purché il loro peso complessivo sia minore o uguale a C. Si può assumere che tutti gli oggetti abbiano peso minore o uguale a C. I pesi sono valori reali arbitrari. Vogliamo definire un algoritmo che disponga gli oggetti negli scatoloni in modo da cercare di minimizzare il numero di scatoloni utilizzati. Questo genere di problema è noto col nome di bin packing problem ed è computazionalmente intrattabile nel caso generale; di conseguenza, ci accontentiamo di un algoritmo semplice che produca una soluzione non necessariamente ottima.
+Suppose we have \\( n \geq 1 \\) objects, each labeled with a number from \\( 1 \\) to \\( n \\); the \\( i \\)-th object has a weight \\( p[i] > 0 \\). These objects must be placed in identical boxes, available in unlimited supply, each capable of holding an arbitrary number of objects as long as their total weight is less than or equal to \\( C \\). It is assumed that all objects have a weight less than or equal to \\( C \\). The weights are arbitrary real values. We aim to define an algorithm that places the objects into boxes to minimize the number of boxes used. This type of problem is known as the bin packing problem and is computationally intractable in the general case; therefore, we settle for a simple algorithm that produces a solution that is not necessarily optimal.
 
-1. Scrivere un algoritmo basato sul paradigma greedy che, dato il vettore dei pesi p[1..n] e il valore C, restituisce il numero di scatoloni che vengono utilizzati.
-2. Calcolare il costo computazionale dell'algoritmo proposto.
+1. Write a greedy algorithm that, given the vector of weights \\( p[1, \ldots, n] \\) and the value \\( C \\), returns the number of boxes used.
+2. Discuss about the computational cost of the proposed algorithm.
 
-### Soluzione
+### Soluton
 
-Un algoritmo greedy molto semplice consiste nel considerare tutti gli oggetti, nell'ordine in cui sono dati. Per ogni oggetto, si controlla se può essere inserito nello scatolone corrente senza superare il limite di peso. Se ciò non è possibile, si prende un nuovo scatolone e lo si inizia a riempire.
+We use a greedy approach where we iteratively place each object in the first box that has enough remaining capacity. If no such box exists, a new box is opened.
 
 ```java
-algoritmo SCATOLONI( array p[1..n] di double, double C ) → int
-    int ns := 0; // numero di scatoloni utilizzati
+algorithm binPacking( array p[1..n] of double, double C ) → int
+    int ns := 0; // number of boxes used
     int i := 1;
     while ( i ≤ n ) do
-        ns := ns + 1; // iniziamo a riempire un nuovo scatolone
-        double Cres := C; // capacità residua dello scatolone corrente
+        ns := ns + 1; // new box
+        double Cres := C; // room left
         while ( i ≤ n && Cres ≥ p[i] ) do
             Cres := Cres – p[i];
             i := i + 1;
@@ -66,18 +72,22 @@ algoritmo SCATOLONI( array p[1..n] di double, double C ) → int
     return ns;
 ```
 
-L'algoritmo fa uso della variabile intera ns, che mantiene il numero di scatoloni utilizzati, e della variabile reale Cres che indica la capacità residua dello scatolone corrente. Se la capacità residua Cres supera il peso p[i] dell'oggetto i-esimo, allora tale oggetto può essere inserito nello scatolone; si provvede quindi a decrementare Cres di p[i] e si passa all'oggetto successivo. Quando Cres diventa inferiore a p[i], allora l'oggetto i non trova posto nello scatolone corrente, e si inizia a riempire il successivo.
-Il costo computazionale dell'algoritmo proposto è Ο (n).
-L'algoritmo qui sopra è molto efficiente, ma piuttosto "stupido": è facile pensare a varianti che in molti casi
-(ma non sempre) ottengono risultati migliori, a scapito della complessità. Ne discutiamo brevemente alcuni:
+The algorithm uses the integer variable `ns`, which keeps track of the number of boxes used, and the variable `Cres`, which indicates the residual capacity of the current box. If the residual capacity Cres exceeds the weight \\( p[i] \\) of the \\( i \\)-th object, then that object can be placed in the box; Cres is decremented by \\( p[i] \\), and the algorithm moves to the next object. When Cres becomes less than \\( p[i] \\), the \\( i \\)-th object cannot fit in the current box, so a new box is used, and the process continues.
 
-1. ad ogni passo di inserisce l'oggetto nella prima scatola in grado di contenerlo
-2. si ordinano gli oggetti per pesi decrescenti, in ogni scatola si inseriscono oggetti pesanti (prendendoli da inizio sequenza) finché possibile, poi oggetti leggeri (prendendoli da fine sequenza) finché
-   possibile
-3. si ordinano gli oggetti per pesi decrescenti, in ogni scatola si inserisce ad ogni turno l'elemento più
-   pesante che ci sta
+The computational cost of the proposed algorithm is \\( O(n) \\).
 
-Si vede facilmente che la complessità del primo algoritmo è O(n^2) e quella del secondo è Ο (n log n). Anche la complessità del terzo algoritmo è Ο(n log n), usando un red-black tree per memorizzare i pesi. Un confronto preciso tra le qualità delle soluzioni proposte dai diversi algoritmi è molto complesso, visto che si deve considerare una distribuzione di probabilità per i valori ed eseguire ragionamenti probabilistici.
+While this algorithm is very efficient, it is somewhat "naive." It is easy to think of variations that often (but not always) produce better results at the expense of increased complexity. Below, we briefly discuss some of these variations:
+
+1. At each step, place the object in the first box that can hold it.
+2. Sort the objects in decreasing order of weights. For each box, place heavy objects (starting from the beginning of the sequence) until no more can fit, then fill the box with lighter objects (starting from the end of the sequence) until no more can fit.
+3. Sort the objects in decreasing order of weights. For each box, at every turn, place the heaviest object that fits.
+
+- The complexity of the **first-fit algorithm** is \\( O(n^2) \\).
+- The complexity of the **decreasing weight algorithm** is \\( O(n \log n) \\).
+- The complexity of the **heaviest-fit algorithm** is \\( O(n \log n) \\), using a `red-black tree` to store the weights.
+
+A precise comparison of the quality of the solutions produced by the different algorithms is quite complex, as it requires considering a probability distribution for the weights and performing probabilistic reasoning.
+
 
 By **Jocelyne Elias** and **Moreno Marzolla**
 

@@ -6,10 +6,11 @@ summary: Cryptography assignments solved
 tags: ["cryptography", "latex"]
 ---
 
+{{< katex >}}
+
 [`{{< icon "link" >}} See it live`](https://micheledinelli.github.io/cryptography)
 
 `cryptography` is a collection of
-{{< katex >}}
 \\( \LaTeX \\)
 assignments solutions written for [Cryptography](https://www.unibo.it/en/study/phd-professional-masters-specialisation-schools-and-other-programmes/course-unit-catalogue/course-unit/2024/487978) university course @unibo.
 

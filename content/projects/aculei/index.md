@@ -8,7 +8,7 @@ tags: ["python", "zero-shot image classification", "machine learning"]
 ---
 
 {{< alert >}}
-We are migration so website may be slow or even unavailable
+We are migrating so website may be slow or even unavailable
 {{< /alert >}}
 
 [`{{< icon "link" >}} See it live`](https://aculei.xyz)
