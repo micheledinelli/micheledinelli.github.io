@@ -1,32 +1,30 @@
 ---
-title: "Shortest path exercises"
+title: "Cammini minimi"
 description: ""
-summary: "Lecture content containing excercises on shortest path problem."
+summary: "Estratto di una lezione contenente esercizi sul problema dei cammini minimi."
 tags: ["shortest path problem", "algorithms and data structures"]
 date: 2024-04-30
 showDate: true
 showTableOfContents: true
 ---
 
-{{< katex >}}
+Esercizi svolti durante una lezione di algoritmi e strutture per la laurea triennale in informatica per il management @unibo.
 
-This is lecture's content for Bachelor's degree in Computer Science and Management. These are exercises on shortest path problem.
+## Esercizio 1
 
-## Exercise 1
-
-Consider the oriented graph \\(G = (V, E)\\) and notice that it is connected with positive edges only:
+Si consideri il grafo orientato G = (V, E), ai cui archi sono associati costi positivi come illustrato in figura:
 
 ![image](featured1.png)
 
-It is required to manually apply Dijkstra algorithm to compute a shortest path tree starting from s. Show the final result adding for each node the minimum distance from s, highlighting the edges that leads to the shortest path.
+Applicare "manualmente" l'algoritmo di Dijkstra per calcolare un albero dei cammini di costo minimo partendo dal nodo sorgente s. Mostrare il risultato finale dell'algoritmo di Dijkstra, inserendo all'interno di ogni nodo la distanza minima da s, ed evidenziando opportunamente (ad esempio, cerchiando il valore del costo) gli archi che fanno parte dell'albero dei cammini di costo minimo.
 
-### Solution
+### Soluzione
 
 ![image](sol-es-1.png)
 
-## Exercise 2
+## Esercizio 2
 
-A road network is described using a oriented and weighted graph \\(G = (V, E, w)\\). For each edge \\((u, v)\\) the function \\(w(u, v)\\) models the amount of gas (in liters) to go from \\(u \ \text{to} \ v\\) and it always returns a positive number. A veichle can store up to \\(C\\) liters of gas in its tank and starts full. There are no gas stations along the way. It is required to write an efficient algorithm that takes \\(G, C, s, d\\), respectively the graph, the gas capacity and two nodes \\(s, d\\) and returns true if and only if exists a shortest path from \\(d \ \text{to} \ s\\) without emptying the tank.
+Una rete stradale è descritta da un grafo orientato pesato G = (V, E, w). Per ogni arco (u, v), la funzione costo w(u, v) indica la quantità di carburante (in litri) che è necessario consumare per percorrere la strada che va da u a v. Tutti i costi sono strettamente positivi. Un veicolo ha il serbatoio in grado di contenere C litri di carburante, inizialmente completamente pieno. Non sono presenti distributori di carburante. Scrivere un algoritmo efficiente che, dati in input il grafo pesato G, la quantità C di carburante inizialmente presente nel serbatoio, e due nodi s e d, restituisce true se e solo se esiste un cammino che consente al veicolo di raggiungere d partendo da s, senza esaurire il carburante durante il tragitto.
 
 ### Soluzione
 
