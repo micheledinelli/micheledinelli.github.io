@@ -4,4 +4,4 @@ description: "Some of my projects."
 cardView: true
 ---
 
-Here are some of my projects. Most of them are on [`GitHub {{< icon "github" >}}`](https://github.com/micheledinelli)
+Here are some of my projects. You can find more of them on [GitHub](https://github.com/micheledinelli).
