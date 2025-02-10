@@ -1,5 +1,5 @@
 ---
-title: "we bot laughed"
+title: "we-bot-laughed"
 description: "Telegram bot that notifies you when the latest one piece chapter is published"
 date: 2025-01-21
 summary: Telegram bot that notifies you when the latest one piece chapter is published

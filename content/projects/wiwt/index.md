@@ -1,5 +1,5 @@
 ---
-title: "where i wrote this"
+title: "where-i-wrote-this"
 description: "Computer graphics project with WebGL"
 date: 2024-07-01
 summary: My room in 3D built with WebGL

@@ -1,6 +1,6 @@
 ---
-title: "huffman coding"
-description: "Huffman coding implementation in Go for lossless file compression "
+title: "Huffman coding"
+description: "Huffman coding implementation in Go for lossless file compression"
 date: 2025-01-27
 summary: Huffman coding implementation in Go for lossless file compression
 tags: ["go", "greedy algorithms"]
