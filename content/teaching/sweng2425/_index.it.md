@@ -4,5 +4,4 @@ summary: "Contenuto delle lezioni e materiale per il corso di ingengeria del sof
 date: 2025-01-21
 tags: ["software engineering"]
 weight: 1
-draft: true
 ---
