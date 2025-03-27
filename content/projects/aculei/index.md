@@ -1,31 +1,16 @@
 ---
 title: "aculei"
 description: "Ai driven photo archive"
-date: 2024-02-01
+date: 2025-03-01
 showSummary: true
-summary: Archive of hunter camera photographs classified by an ai model
+summary: Interactive archive based on 30.342 images recorded since 2020 by 7 huntercameras around Picco dell'acquila valley, Umbria Italy
 tags: ["python", "zero-shot image classification", "machine learning"]
 ---
 
-{{< alert >}}
-We are migrating so website may be slow or even unavailable
-{{< /alert >}}
-
 [`{{< icon "link" >}} See it live`](https://aculei.xyz)
-[`{{< icon "link" >}} Backup link`](https://aculei-fe.onrender.com)
 
-`aculei` is an online photo archive that collects hunter-cameras images shot in Umbria (Italy). It is divided into 3 components: a frontend, a backend and a command line application.
+Aculei is an interactive archive based on 30.342 images recorded since 2020 by 7 huntercameras around Picco dell'acquila valley, Umbria Italy.
 
-![feat](featured.png)
+Full documentation is available at [aculei.github.io](https://aculei.github.io)
 
-## Documentation
-
-[`{{< icon "link" >}} Read the paper`](https://drive.google.com/file/d/1aJPbHsFUKlRXWCtu9vfiDBtc7OOQf5Ai/view?usp=drive_link)
-
-## Repository
-
-Repositories are grouped under a [`GitHub`](https://github.com/aculei) organization.
-
-{{< github repo="aculei/aculei-fe" >}}
-{{< github repo="aculei/aculei-be" >}}
-{{< github repo="aculei/aculei-cli" >}}
+Repositories are grouped under [aculei](https://github.com/aculei) organization.
