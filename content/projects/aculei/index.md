@@ -3,7 +3,7 @@ title: "aculei"
 description: "Ai driven photo archive"
 date: 2025-03-01
 showSummary: true
-summary: Interactive archive based on 30.342 images recorded since 2020 by 7 huntercameras around Picco dell'acquila valley, Umbria Italy
+summary: Interactive archive based on 30.342 images recorded since 2020 by 7 huntercameras around Picco dell&apos;Acquila Valley, Umbria Italy
 tags: ["python", "zero-shot image classification", "machine learning"]
 ---
 
