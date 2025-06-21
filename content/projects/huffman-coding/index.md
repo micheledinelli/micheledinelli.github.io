@@ -1,5 +1,5 @@
 ---
-title: "Huffman coding"
+title: "Huffman Coding"
 description: "Huffman coding implementation in Go for lossless file compression"
 date: 2025-01-27
 summary: Huffman coding implementation in Go for lossless file compression

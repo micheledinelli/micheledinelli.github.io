@@ -1,8 +1,8 @@
 ---
-title: "where-i-wrote-this"
+title: "Where I Wrote This"
 description: "Computer graphics project with WebGL"
 date: 2024-07-01
-summary: My room in 3D built with WebGL
+summary: My room in 3D rendered with WebGL
 tags: ["computer graphics", "webgl", "glsl", "javascript"]
 ---
 

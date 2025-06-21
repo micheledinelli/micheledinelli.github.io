@@ -1,5 +1,5 @@
 ---
-title: "aculei"
+title: "Aculei"
 description: "Ai driven photo archive"
 date: 2025-03-01
 showSummary: true

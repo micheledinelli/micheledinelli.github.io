@@ -1,5 +1,5 @@
 ---
-title: "wifind"
+title: "Wifind"
 description: ""
 date: 2024-03-01
 summary: Radio fingerprinting command-line application
