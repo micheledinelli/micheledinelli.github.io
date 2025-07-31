@@ -1,0 +1,224 @@
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+  
+body {
+  width: var(--body-width, 30%);
+  margin: 0 auto;
+
+  font-family: var(--font-family);
+  font-size: var(--font-size, x-small);
+  font-weight: var(--font-weight, 400);
+  letter-spacing: var(--font-letter-spacing, -0.06em);
+  
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+header {
+  margin: var(--header-margin);
+
+  h1 a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: var(--h1-font-size);
+    letter-spacing: var(--h1-letter-spacing, -0.1em);
+  }
+
+  nav {
+    margin: var(--nav-margin);
+    width: var(--nav-width, 100%);
+
+    letter-spacing: var(--nav-letter-spacing, -0.1em);
+    font-size: var(--nav-font-size, 1.1rem);
+    
+    ul {
+      list-style: none;
+  
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+footer {
+  font-size: var(--footer-font-size);
+  letter-spacing: var(--footer-letter-spacing);
+  
+  margin: var(--footer-margin);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  .footer-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .build {
+    font-size: var(--build-font-size);
+    letter-spacing: var(--footer-letter-spacing);
+    color: var(--muted-color);
+  }
+
+  .social {
+    font-size: 0;
+    display: flex;
+    gap: .8rem;
+    
+    a {
+      display: inline-block;
+    }
+
+    .icon {
+      display: inline-block;
+      width: var(--icon-width);
+      height: var(--icon-height);
+    }
+  }
+}
+
+#avatar-container {
+  margin: var(--avatar-container-margin);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    max-width: var(--avatar-img-max-width, 100%);
+  }
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+  letter-spacing: var(--h1-letter-spacing, 0.1em);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  letter-spacing: var(--h2-letter-spacing, 0.05em);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+  letter-spacing: var(--h3-letter-spacing, 0.03em);
+}
+
+a {
+  color: var(--accent-color, blue);
+  text-decoration: underline;
+  pointer-events:all;
+  cursor: pointer;
+}
+
+time {
+  font-family: var(--font-family-mono, monospace);
+  letter-spacing: var(--font-letter-spacing, -0.02rem);
+}
+
+.icon {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: white;
+    stroke: black;
+  }
+}
+
+.icon-link {
+  color: var(--text-color);
+}
+
+.muted {
+  color: var(--muted-color, rgb(100, 100, 100));
+} 
+
+.section-list {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+
+  .section-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--muted-color);
+    
+    &:last-child {
+      border-bottom: none;
+    }
+    
+    .section-list-item-meta {
+      text-align: start;
+      flex: 2;
+    }
+    
+    .section-list-item-content {
+      text-align: start;
+      flex: 3;
+    }
+  }
+}
+
+.page-content {
+  margin: 1rem 0;
+
+  h2 {
+    margin: 1rem 0;
+  }
+
+  p {
+    margin: 1rem 0;
+  }
+
+  ul, ol {
+    margin: 1rem 0;
+    padding-left: 2rem;
+
+    li {
+      margin: .5rem 0;
+    }
+  }
+
+  pre {
+    background-color: var(--muted-color);
+    padding: .5rem;
+    border-radius: .25rem;
+    overflow-x: auto;
+    
+    code {
+      font-family: var(--font-family);
+      font-size: var(--font-size);
+      color: var(--text-color);
+    }
+  }
+}
+
+img {
+  max-width: var(--img-max-width, 100%);
+}

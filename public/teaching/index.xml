@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teaching on Michele Dinelli</title>
+    <link>//192.168.1.14:1313/teaching/</link>
+    <description>Recent content in Teaching on Michele Dinelli</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="//192.168.1.14:1313/teaching/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

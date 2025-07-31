@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Category A on Michele Dinelli</title>
+    <link>//192.168.1.14:1313/categories/category-a/</link>
+    <description>Recent content in Category A on Michele Dinelli</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//192.168.1.14:1313/categories/category-a/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algo</title>
+      <link>//192.168.1.14:1313/teaching/asd/algo1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//192.168.1.14:1313/teaching/asd/algo1/</guid>
+      <description>&lt;p&gt;An algorithm&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

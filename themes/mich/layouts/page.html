@@ -1,0 +1,20 @@
+{{ define "main" }}
+  <h2>{{ .Title }}</h2>
+  <div class="muted">
+    {{ printf "Estimated reading time: %d minutes" .ReadingTime }}
+  </div>
+  <div class="muted">
+    {{ with .Lastmod }}
+      Last modified: <time>{{ .Format "2006-01-02 15:04:05 MST" }}</time>
+    {{ end }}
+  </div>
+  {{/*  <div class="muted">
+    {{ .Summary }}
+  </div>  */}}
+
+  <div class="page-content">
+    {{ .Content }}
+  </div>
+  
+  {{/*  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}  */}}
+{{ end }}

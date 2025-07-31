@@ -1,0 +1,44 @@
+baseURL = 'https://micheledinelli.github.io'
+languageCode = 'en-us'
+title = 'Michele Dinelli'
+theme = 'mich'
+
+# enableGitInfo = true
+
+[params]
+  name = 'Michele Dinelli'
+  avatar = 'images/avatar.webp'
+  latestPosts = 5
+
+  [params.footer]
+    # hide = true
+    # hideCopyright = true
+    # hidePoweredBy = true
+    # hideSocial = true
+    # hideBuild = true
+
+  [params.social]
+    github = 'https://github.com/micheledinelli'
+    x = 'https://x.com/michele_dinelli'
+    linkedin = 'https://www.linkedin.com/in/micheledinelli/'
+
+[menus]
+  [[menus.main]]
+    name = ' / '
+    pageRef = '/'
+    weight = 10
+  
+  [[menus.main]]
+    name = 'Teaching'
+    pageRef = '/teaching'
+    weight = 20
+  
+  [[menus.main]]
+    name = 'Projects'
+    pageRef = '/projects'
+    weight = 30
+  
+  [[menus.main]]
+    name = 'Tags'
+    pageRef = '/tags'
+    weight = 40 

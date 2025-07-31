@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html
+  lang="en-us"
+  dir="ltr"
+>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Graph Exercises | Michele Dinelli</title>
+
+
+
+
+<link rel="stylesheet" href="//192.168.1.14:1313/sass/main.min.css">
+<link rel="stylesheet" href="//192.168.1.14:1313/sass/variables.min.css">
+<link rel="stylesheet" href="//192.168.1.14:1313/sass/theme.min.css">
+
+
+
+
+<script src="//192.168.1.14:1313/js/main.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js" integrity="sha384-cMkvdD8LoxVzGF/RPUKAcvmm49FQ0oxwDF3BGKtDXcEc+T1b2N+teh/OJfpU0jr6" crossorigin="anonymous"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+  </head>
+
+  <body>
+    <header>
+    <h1><a href="/">Michele Dinelli</a></h1>
+    
+  <nav>
+    <ul>
+    <li>
+      <a href="/">[ / ]</a>
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/teaching/">[Teaching]</a>
+    </li>
+    <li>
+      <a>[Projects]</a>
+    </li>
+    <li>
+      <a href="/tags/">[Tags]</a>
+    </li>
+    </ul>
+  </nav>
+ 
+</header>
+    
+  <h2>Graph Exercises</h2>
+  <div class="muted">
+    Estimated reading time: 6 minutes
+  </div>
+  <div class="muted">
+    
+      Last modified: <time>2025-07-30 18:00:01 CEST</time>
+    
+  </div>
+  
+
+  <div class="page-content">
+    <p>This is lecture&rsquo;s content for Bachelor&rsquo;s degree in computer science for management @unibo. These are exercises on graph data structures.</p>
+<h2 id="exercise-1">Exercise 1</h2>
+<p>Consider the following undirected graph:</p>
+<p><img src="./graph-exercise-1.webp" alt="Graph Image"></p>
+<ol>
+<li>
+<p>Can the bold edges represent a spanning tree obtained by a depth-first search of the graph? If yes, specify the starting node of the traversal and represent the graph using adjacency lists so that the order of the elements in the lists allows the <code>DFS</code> algorithm to produce exactly the tree shown.</p>
+</li>
+<li>
+<p>Can the bold edges represent a spanning tree obtained by a breadth-first search of the graph? If yes, specify the starting node of the traversal and represent the graph using adjacency lists so that the order of the elements in the lists allows the <code>BFS</code> algorithm to produce exactly the tree shown.</p>
+</li>
+</ol>
+<h3 id="solution">Solution</h3>
+<p>The answer is affirmative in both cases. For the depth-first traversal, one can start, for example, from A or B. For the breadth-first traversal, one can start, for example, from F. In both cases (apart from the starting node, which differs between DFS and BFS), the tree shown in the text can be obtained using, for example, the following representation with adjacency lists: Naturally, other correct solutions were possible.</p>
+<p><img src="sol-es-1.png" alt="image"></p>
+<h2 id="exercise-2">Exercise 2</h2>
+<p>Write an efficient algorithm to calculate the number of distinct shortest paths from a source node \( s \) to each node \( u \) in an undirected, unweighted, and connected graph \( G = (V, E) \). Two paths are considered distinct if they differ by at least one edge. Note that there is one shortest path (the empty path) from \( s \) to itself. Apply the algorithm to the following graph:</p>
+<p><img src="featured2.png" alt="image2"></p>
+<h3 id="solution-1">Solution</h3>
+<p>The breadth-first search (BFS) algorithm can be used to find a shortest path between a source node \( s \) and each node reachable from \( s \). However, we can extend it to calculate the number of distinct shortest paths between \( s \) and the nodes reachable from it. Recall that the BFS algorithm visits nodes in non-decreasing order of distance from the source. First, the node \( s \) (which is at distance 0 from itself) is visited, then the adjacent nodes at distance 1, then those at distance 2, and so on. Suppose we have already calculated the number of shortest paths \( c[u] \) for each node \( u \) that is at distance \( k \) from the source. The number of shortest paths leading to a node \( v \) that is at distance \( k + 1 \) can be expressed as:</p>
+<p>$$
+c[v] = \sum_{{[u,v]} \in E, \ {d[u]=k}} c[u]
+$$</p>
+<p>For example, consider the following situation where nodes \( x, y, z\) are at distance \(k\) from \(s\) and are connected by an edge to node \(v\), which is at distance \(k + 1\). Assuming the numbers \(c[x], c[y], c[z]\) of distinct shortest paths from \(s\) to (respectively) \(x, y, z\) have already been calculated, then we can reach \( v \) through \( c[x] \) distinct paths passing through \( x \), \( c[y] \) distinct paths passing through \( y \), and \( c[z] \) distinct shortest paths passing through \( z \).</p>
+<p><img src="sol-es-2.0.png" alt="image"></p>
+<p>The value \( c[v] \) can be calculated for each node \( v \) as the graph is visited. Initially, set \( c[v] ← 0 \) for every \( v \), except for the source \( s \), where \( c[s] \leftarrow 1 \) since there is only one shortest path (the empty path) from the source to itself. Each time the BFS algorithm traverses the undirected edge \({u, v}\) leading from node \( u \) to a node \( v \) at distance \( d[v] = d[u] + 1 \), update \( c[v] \leftarrow c[v] + c[u] \).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>countPaths( graph G <span style="color:#f92672">=</span> (V, E), node s )
+</span></span><span style="display:flex;"><span>    integer d<span style="color:#f92672">[</span>1..<span style="color:#a6e22e">n</span><span style="color:#f92672">]</span>, c<span style="color:#f92672">[</span>1..<span style="color:#a6e22e">n</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>    integer u, v;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> v <span style="color:#960050;background-color:#1e0010">←</span> 1 to n <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>        d<span style="color:#f92672">[</span>v<span style="color:#f92672">]</span> <span style="color:#960050;background-color:#1e0010">←</span> <span style="color:#f92672">+</span><span style="color:#960050;background-color:#1e0010">∞</span>;
+</span></span><span style="display:flex;"><span>        c<span style="color:#f92672">[</span>v<span style="color:#f92672">]</span> <span style="color:#960050;background-color:#1e0010">←</span> 0;
+</span></span><span style="display:flex;"><span>    endfor
+</span></span><span style="display:flex;"><span>    Queue Q;
+</span></span><span style="display:flex;"><span>    c<span style="color:#f92672">[</span>s<span style="color:#f92672">]</span> <span style="color:#960050;background-color:#1e0010">←</span> 1;
+</span></span><span style="display:flex;"><span>    d<span style="color:#f92672">[</span>s<span style="color:#f92672">]</span> <span style="color:#960050;background-color:#1e0010">←</span> 0;
+</span></span><span style="display:flex;"><span>    Q.<span style="color:#a6e22e">insert</span>(s);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> ( not Q.<span style="color:#a6e22e">empty</span>() ) <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>        u <span style="color:#960050;background-color:#1e0010">←</span> Q.<span style="color:#a6e22e">dequeue</span>();
+</span></span><span style="display:flex;"><span>        foreach v adjacent to u <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">if</span> ( d<span style="color:#f92672">[</span>v<span style="color:#f92672">]</span> <span style="color:#f92672">==</span> <span style="color:#f92672">+</span><span style="color:#960050;background-color:#1e0010">∞</span> ) then d<span style="color:#f92672">[</span>v<span style="color:#f92672">]</span> <span style="color:#960050;background-color:#1e0010">←</span> d<span style="color:#f92672">[</span>u<span style="color:#f92672">]</span> <span style="color:#f92672">+</span> 1;
+</span></span><span style="display:flex;"><span>                Q.<span style="color:#a6e22e">insert</span>(v);
+</span></span><span style="display:flex;"><span>            endif
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">if</span> ( d<span style="color:#f92672">[</span>v<span style="color:#f92672">]</span> <span style="color:#f92672">==</span> d<span style="color:#f92672">[</span>u<span style="color:#f92672">]</span> <span style="color:#f92672">+</span> 1 ) then
+</span></span><span style="display:flex;"><span>                c<span style="color:#f92672">[</span>v<span style="color:#f92672">]</span> <span style="color:#960050;background-color:#1e0010">←</span> c<span style="color:#f92672">[</span>v<span style="color:#f92672">]</span> <span style="color:#f92672">+</span> c<span style="color:#f92672">[</span>u<span style="color:#f92672">]</span>;
+</span></span><span style="display:flex;"><span>                endif
+</span></span><span style="display:flex;"><span>            endfor
+</span></span><span style="display:flex;"><span>    endwhile
+</span></span></code></pre></div><p>The cost of the <code>countPaths</code> algorithm is the same as a breadth-first traversal, i.e. \(O(n+m)\). In the following example, we label each node of the graph with the number of shortest paths from \(s\).</p>
+<p><img src="sol-es-2.1.png" alt="image"></p>
+<h2 id="exercise-3">Exercise 3</h2>
+<p>A remote city is located on a set of \(n\) islands, each uniquely identified by an integer \(1,\dots, n1, \dots, n\). The islands are connected by bridges, which can be crossed in both directions. Thus, we can represent the city as an undirected graph \(G=(V,E)G\), where \(V\) represents the set of \(n\) islands and \(E\) the set of bridges. Each bridge \({u,v}\) can support a weight less than or equal to \(W[u,v]\). The matrix \(W\) is symmetric (so \(W[u,v]=W[v,u]\)), and the weights are positive real numbers. If there is no bridge directly connecting \(u\) and \(v\), we set \(W[u,v]=W[v,u]= \infin \)</p>
+<p>A truck of weight \(P\) is located on island \(s\) (source) and must reach island \(d\) (destination). To do this, it can only use bridges capable of supporting its weight. Write an algorithm that, given the matrix \(W\), the weight \(P\), and the integers \(s\) and \(d\), returns the minimum number of bridges required to reach \(d \ \text{from} \ s\), if possible. Print the sequence of islands traversed.</p>
+<h3 id="solution-2">Solution</h3>
+<p>We use a breadth-first search algorithm modified appropriately to avoid crossing bridges that cannot support the weight \(P\).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>ATTRAVERSAISOLE( real W<span style="color:#f92672">[</span>1..<span style="color:#a6e22e">n</span>, 1..<span style="color:#a6e22e">n</span><span style="color:#f92672">]</span>, real P, integer s, integer d ) <span style="color:#960050;background-color:#1e0010">→</span> integer
+</span></span><span style="display:flex;"><span>    integer parent<span style="color:#f92672">[</span>1..<span style="color:#a6e22e">n</span><span style="color:#f92672">]</span>, dist<span style="color:#f92672">[</span>1..<span style="color:#a6e22e">n</span><span style="color:#f92672">]</span>;
+</span></span><span style="display:flex;"><span>    Queue Q;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> v <span style="color:#960050;background-color:#1e0010">←</span> 1 to n <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>        parent<span style="color:#f92672">[</span>v<span style="color:#f92672">]</span> <span style="color:#960050;background-color:#1e0010">←</span> <span style="color:#f92672">-</span>1;
+</span></span><span style="display:flex;"><span>        dist<span style="color:#f92672">[</span>v<span style="color:#f92672">]</span> <span style="color:#960050;background-color:#1e0010">←</span> <span style="color:#f92672">+</span>inf;
+</span></span><span style="display:flex;"><span>    endfor
+</span></span><span style="display:flex;"><span>    dist<span style="color:#f92672">[</span>s<span style="color:#f92672">]</span> <span style="color:#960050;background-color:#1e0010">←</span> 0;
+</span></span><span style="display:flex;"><span>    Q.<span style="color:#a6e22e">ENQUEUE</span>(s);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> ( <span style="color:#f92672">!</span> Q.<span style="color:#a6e22e">ISEMPTY</span>() ) <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>        integer u <span style="color:#960050;background-color:#1e0010">←</span> Q.<span style="color:#a6e22e">DEQUEUE</span>();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> ( u <span style="color:#f92672">==</span> d ) then
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>; <span style="color:#75715e">// exit the loop if the destination node is dequeued</span>
+</span></span><span style="display:flex;"><span>        endif
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> v <span style="color:#960050;background-color:#1e0010">←</span> 1 to n <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">if</span> ( W<span style="color:#f92672">[</span>u,v<span style="color:#f92672">]</span> <span style="color:#f92672">&gt;=</span> P and dist<span style="color:#f92672">[</span>v<span style="color:#f92672">]</span> <span style="color:#f92672">==</span> <span style="color:#f92672">+</span><span style="color:#960050;background-color:#1e0010">∞</span> ) then
+</span></span><span style="display:flex;"><span>                dist<span style="color:#f92672">[</span>v<span style="color:#f92672">]</span> <span style="color:#960050;background-color:#1e0010">←</span> dist<span style="color:#f92672">[</span>u<span style="color:#f92672">]</span> <span style="color:#f92672">+</span> 1; parent<span style="color:#f92672">[</span>v<span style="color:#f92672">]</span> <span style="color:#960050;background-color:#1e0010">←</span> u; Q.<span style="color:#a6e22e">ENQUEUE</span>(v);
+</span></span><span style="display:flex;"><span>            endif
+</span></span><span style="display:flex;"><span>        endfor
+</span></span><span style="display:flex;"><span>    endwhile
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">if</span> ( dist<span style="color:#f92672">[</span>d<span style="color:#f92672">]</span> <span style="color:#f92672">==</span> <span style="color:#f92672">+</span><span style="color:#960050;background-color:#1e0010">∞</span> ) then
+</span></span><span style="display:flex;"><span>        print <span style="color:#960050;background-color:#1e0010">“</span>no path<span style="color:#960050;background-color:#1e0010">”</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>        integer i <span style="color:#960050;background-color:#1e0010">←</span> d;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span> ( i <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span>1 ) <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>            print i;
+</span></span><span style="display:flex;"><span>            i <span style="color:#960050;background-color:#1e0010">←</span> parent<span style="color:#f92672">[</span>i<span style="color:#f92672">]</span>;
+</span></span><span style="display:flex;"><span>        endwhile;
+</span></span><span style="display:flex;"><span>    endif
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> dist<span style="color:#f92672">[</span>d<span style="color:#f92672">]</span>; <span style="color:#75715e">// minimum number of bridges traversed</span>
+</span></span></code></pre></div><p>By <strong>Jocelyne Elias</strong> and <strong>Moreno Marzolla</strong></p>
+
+  </div>
+  
+  
+ 
+    
+  </body>
+</html>
