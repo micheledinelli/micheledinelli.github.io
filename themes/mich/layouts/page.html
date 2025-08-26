@@ -1,20 +1,29 @@
 {{ define "main" }}
-  <h2>{{ .Title }}</h2>
-  <div class="muted">
-    {{ printf "Estimated reading time: %d minutes" .ReadingTime }}
+<h2>{{ .Title }}</h2>
+<div class="page-meta">
+  <div>
+    <span>Summary:</span>
+    <div>{{ .Summary }}</div>
   </div>
-  <div class="muted">
-    {{ with .Lastmod }}
-      Last modified: <time>{{ .Format "2006-01-02 15:04:05 MST" }}</time>
-    {{ end }}
+  {{ if .Params.showReadingTime }}
+  <div>
+    <span>Reading time:</span>
+    <div>{{ .ReadingTime }} minutes</div>
   </div>
-  {{/*  <div class="muted">
-    {{ .Summary }}
-  </div>  */}}
+  {{ end }}
+  <div>
+    <span>Commit:</span>
+    <div>
+      {{ with .GitInfo }}
+      <a
+        href="https://github.com/micheledinelli/micheledinelli.github.io/commit/{{ .AbbreviatedHash }}"
+        >{{ .AbbreviatedHash }}</a
+      >
+      {{ end }}
+    </div>
+  </div>
+</div>
 
-  <div class="page-content">
-    {{ .Content }}
-  </div>
-  
-  {{/*  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}  */}}
-{{ end }}
+<div class="page-content">{{ .Content }}</div>
+
+{{/* {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }} */}} {{ end }}

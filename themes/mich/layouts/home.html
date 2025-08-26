@@ -2,7 +2,7 @@
   {{ .Content }} 
 
   {{ $image := resources.Get .Site.Params.avatar }} 
-  {{ $image := $image.Fit "400x300" }}
+  {{/*  {{ $image := $image.Fit "400x300" }}  */}}
   <div id="avatar-container">
     <img id="avatar" src="{{ $image.Permalink }}" alt="Avatar" />
   </div>

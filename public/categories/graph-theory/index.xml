@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Graph Theory on Michele Dinelli</title>
-    <link>//192.168.1.14:1313/categories/graph-theory/</link>
+    <link>http://localhost:49244/categories/graph-theory/</link>
     <description>Recent content in Graph Theory on Michele Dinelli</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Jul 2025 18:00:01 +0200</lastBuildDate>
-    <atom:link href="//192.168.1.14:1313/categories/graph-theory/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 31 Jul 2025 15:16:14 +0200</lastBuildDate>
+    <atom:link href="http://localhost:49244/categories/graph-theory/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Graph Exercises</title>
-      <link>//192.168.1.14:1313/teaching/asd/graph-exercise/</link>
+      <link>http://localhost:49244/teaching/asd/graph-exercise/</link>
       <pubDate>Wed, 30 Jul 2025 18:00:01 +0200</pubDate>
-      <guid>//192.168.1.14:1313/teaching/asd/graph-exercise/</guid>
-      <description>Graph theory excercises with solutions</description>
+      <guid>http://localhost:49244/teaching/asd/graph-exercise/</guid>
+      <description>Graph exercises for Bachelor&amp;rsquo;s degree in computer science for management at University of Bologna</description>
     </item>
   </channel>
 </rss>

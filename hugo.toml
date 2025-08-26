@@ -3,11 +3,11 @@ languageCode = 'en-us'
 title = 'Michele Dinelli'
 theme = 'mich'
 
-# enableGitInfo = true
+enableGitInfo = true
 
 [params]
   name = 'Michele Dinelli'
-  avatar = 'images/avatar.webp'
+  avatar = 'images/12.webp'
   latestPosts = 5
 
   [params.footer]
@@ -20,7 +20,7 @@ theme = 'mich'
   [params.social]
     github = 'https://github.com/micheledinelli'
     x = 'https://x.com/michele_dinelli'
-    linkedin = 'https://www.linkedin.com/in/micheledinelli/'
+    linkedin = 'https://www.linkedin.com/in/michele-dinelli/'
 
 [menus]
   [[menus.main]]
