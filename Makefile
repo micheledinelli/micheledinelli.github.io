@@ -1,6 +1,3 @@
-push_blog: 
-	git add . && git commit -m "Update" && git push
-
 build:
 	hugo --minify
 
