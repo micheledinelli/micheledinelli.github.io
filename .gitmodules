@@ -1,0 +1,3 @@
+[submodule "themes/brackets"]
+	path = themes/brackets
+	url = https://github.com/micheledinelli/brackets.git

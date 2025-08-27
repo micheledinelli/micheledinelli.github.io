@@ -1,14 +1,13 @@
 baseURL = 'https://micheledinelli.github.io'
 languageCode = 'en-us'
 title = 'Michele Dinelli'
-theme = 'mich'
+theme = 'brackets'
 
 enableGitInfo = true
 
 [params]
   name = 'Michele Dinelli'
   avatar = 'images/12.webp'
-  latestPosts = 5
 
   [params.footer]
     # hide = true
@@ -39,6 +38,6 @@ enableGitInfo = true
     weight = 30
   
   [[menus.main]]
-    name = 'Tags'
-    pageRef = '/tags'
-    weight = 40 
+    name = 'About'
+    pageRef = '/about'
+    weight = 40
