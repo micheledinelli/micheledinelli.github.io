@@ -6,7 +6,7 @@ summary: Hunter camera archive
 
 [https://aculei.xyz](https://aculei.xyz)
 
-aculei is an interactive photo archive based on 30.342 images (apr.25) recorded since 2020 by 7 huntercameras around the Picco dell'Acquila valley, Umbria Italy. 
+aculei is an interactive photo archive based on 30.342 images (apr.25) recorded since 2020 by 7 huntercameras around the Picco dell'Aquila valley, Umbria Italy. 
 
 ![Website Screenshot](aculei.webp)
 
