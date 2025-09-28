@@ -8,6 +8,7 @@ enableGitInfo = true
 [params]
   name = 'Michele Dinelli'
   avatar = 'images/12.webp'
+  gpx = true
 
   [params.footer]
     # hide = true
@@ -41,3 +42,8 @@ enableGitInfo = true
     name = 'About'
     pageRef = '/about'
     weight = 40
+  
+  [[menus.main]]
+    name = 'Blog'
+    pageRef = '/blog'
+    weight = 50
