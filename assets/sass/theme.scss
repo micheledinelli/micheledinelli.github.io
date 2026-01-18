@@ -1,11 +1,29 @@
+@font-face {
+  font-family: DepartureMono;
+  src: url(/fonts/DepartureMono-Regular.otf);
+}
+
 :root {
   --font-family: "Geist", monospace;
-  --font-family-mono: "Geist Mono", monospace;
+  --font-family-mono: "Geist Mono", monospace, "DepartureMono";
   --text-color: black;
   --background-color: #f0f0f0;
   --accent-color: blue;
   --muted-color: #302e2e;
+}
 
+.mono {
+  font-family: var(--font-family-mono, monospace);
+  letter-spacing: var(--font-letter-spacing, -0.02rem);
+}
+
+.build {
+  font-family: var(--font-family-mono, monospace);
+  text-align: center;
+}
+
+a:not(h1 a) {
+  font-family: var(--font-family-mono, monospace);
 }
 
 @media (min-width: 1024px) {

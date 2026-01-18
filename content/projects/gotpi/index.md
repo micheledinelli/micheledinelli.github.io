@@ -27,6 +27,12 @@ Reusing the key multiple times gives the encryption depth, the more depth given,
 
 If two images are encrypted using the same key, hence violating the rule of one-time, then an adversary can compute the xor of the two encryptions and gain an advantage, graphically:
 
+| send-cash.png | vibrant.png | | xor-plaintext.png |
+| :---: | :---: | :---: | :---: |
+| ![send-cash.png](./send-cash.png) | ![vibrant.png](./vibrant.png) | $$ \oplus $$ | ![xor-plaintext.png](./xor-plaintext.png) |
+
+Then encrypting the two images with the same key, and xoring the ciphertexts together results in:
+
 | send-cash.enc.png | | vibrant.enc.png | | xoring leaks information|
 | :---: | :---: | :---: | :---: | :---: |
 | ![send-cash.enc.png](./send-cash.enc.png) | $$ \oplus $$ | ![vibrant.enc.png](./vibrant.enc.png) | $$ = $$ | ![xor.png](./xor.png) |
