@@ -24,7 +24,7 @@ enableGitInfo = true
 
 [menus]
   [[menus.main]]
-    name = ' / '
+    name = '~'
     pageRef = '/'
     weight = 10
   

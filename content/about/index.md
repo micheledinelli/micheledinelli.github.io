@@ -10,4 +10,4 @@ I am teaching assistant for Algorithms and Data Structures and Software Engineer
 
 I like running but sports in general, mangas and chess.
 
-I may post sometimes about what i do on the [blog](/blog) section.
+I may post sometimes about what I do on the [blog](/blog) section.
