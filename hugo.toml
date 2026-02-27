@@ -43,5 +43,3 @@ enableGitInfo = true
     pageRef = '/about'
     weight = 40
 
-[markup.goldmark.renderer]
-unsafe = true

@@ -11,6 +11,3 @@ I am teaching assistant for Algorithms and Data Structures and Software Engineer
 I like running but sports in general, mangas and chess.
 
 I may post sometimes about what I do on the [blog](/blog) section.
-
-<iframe height='300' width='100%' frameborder='0' allowtransparency='true' src='https://www.strava.com/athletes/157892696/latest-rides/743ddf550a09a63d944cab8fcbfafcce33a4af17'></iframe>
-<!-- <iframe height='160' width='100%' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/157892696/activity-summary/743ddf550a09a63d944cab8fcbfafcce33a4af17'></iframe> -->
