@@ -5,3 +5,5 @@ summary: "My master's thesis"
 ---
 
 GitHub [repo](https://github.com/micheledinelli/master-thesis).
+
+Full document is available [here](/master-thesis/thesis.pdf)
