@@ -25,9 +25,3 @@
 a:not(h1 a) {
   font-family: var(--font-family-mono, monospace);
 }
-
-@media (min-width: 1024px) {
-  :root {
-    --body-width: 35%;
-  }
-}
