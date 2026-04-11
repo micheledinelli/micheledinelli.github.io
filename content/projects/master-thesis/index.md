@@ -1,9 +1,9 @@
 ---
-date: "2025-12-12T19:35:47+01:00"
-title: "Master Thesis"
+date: "2026-03-26T19:35:47+01:00"
+title: "On Proving The Security Of Message Authentication Codes Using Lamba-BLL and Hoare Logic"
 summary: "My master's thesis"
 ---
 
-GitHub [repo](https://github.com/micheledinelli/master-thesis).
+[github.com/micheledinelli/master-thesis](https://github.com/micheledinelli/master-thesis)
 
-Full document is available [here](/master-thesis/thesis.pdf)
+{{< embed-pdf url="https://micheledinelli.github.io/master-thesis/thesis.pdf" >}}
