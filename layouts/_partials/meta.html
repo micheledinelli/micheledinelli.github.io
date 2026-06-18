@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>{{ .Params.title }} | {{ .Site.Title }}</title>
+
+{{ $style := resources.Get "sass/main.scss" | css.Sass | resources.Minify }}
+{{ $variables := resources.Get "sass/variables.scss" | css.Sass | resources.Minify }}
+{{ $theme := resources.Get "sass/theme.scss" | css.Sass | resources.Minify }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+<link rel="stylesheet" href="{{ $variables.Permalink }}">
+<link rel="stylesheet" href="{{ $theme.Permalink }}">
+
+{{ if .Site.Params.favicon }}
+<link rel="icon" href="{{ .Site.Params.favicon | relURL }}">
+{{ end }}
+
+{{ $js := resources.Get "js/main.js" }}
+<script src="{{ $js.Permalink }}"></script>
+
+{{ if .Params.math }}{{ partial "helpers/katex.html" . }}{{ end }}
+
+{{ if or .Site.Params.gpx .Params.gpx }}
+  {{ $gpx := resources.Get "js/gpx-viewer.js" }}
+  <script src="{{ $gpx.Permalink }}"></script>
+
+  <!-- leaflet-ui -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-ui@0.6.0/dist/leaflet-ui.js"></script>
+
+  <!-- leaflet-elevation -->
+  <link rel="stylesheet" href="https://unpkg.com/@raruto/leaflet-elevation@2.5.1/dist/leaflet-elevation.min.css" />
+  <script src="https://unpkg.com/@raruto/leaflet-elevation@2.5.1/dist/leaflet-elevation.min.js"></script>
+  
+  {{ end }}
+
+<script defer src="https://analytics.aculei.xyz/script.js" data-website-id="403c5c4d-6d2f-4abb-a19f-dabd41778eff"></script>
