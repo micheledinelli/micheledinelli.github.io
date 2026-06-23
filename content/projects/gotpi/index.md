@@ -3,9 +3,8 @@ date: "2026-01-16T15:31:17+01:00"
 title: "GOTPi"
 summary: "Library and CLI utility to play with OTP and images"
 math: true
+repository: https://github.com/micheledinelli/gotpi
 ---
-
-[github.com/micheledinelli/gotpi](https://github.com/micheledinelli/gotpi).
 
 GOTPi (Golang + OTP + images) is a lightweight Go CLI and library for experimenting with One-Time Pad (OTP) encryption using images as keys. It allows to generate random noise keys as PNGs (either Grayscale or RGB) and use them to bitwise-encrypt and decrypt image files.
 
@@ -15,6 +14,7 @@ It supports key generation in two modes: standard black and white (Grayscale) or
 | :---------------------: | :-----------------------: |
 | ![bw-key](./bw-key.png) | ![rgb-key](./rgb-key.png) |
 |     `gotpi key-gen`     |   `gotpi key-gen --rgb`   |
+
 
 ## Two-Time Pad security
 

@@ -1,11 +1,14 @@
 @font-face {
-  font-family: DepartureMono;
-  src: url(/fonts/DepartureMono-Regular.otf);
+    font-family: LabMono;
+    src: url('/fonts/LabMono-Regular.otf') format('otf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 :root {
   --font-family: "Geist", monospace;
-  --font-family-mono: "Geist Mono", monospace, "DepartureMono";
+  --font-family-mono: "LabMono", monospace;
   --text-color: black;
   --background-color: #f0f0f0;
   --accent-color: blue;

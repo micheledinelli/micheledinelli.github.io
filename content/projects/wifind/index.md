@@ -2,19 +2,18 @@
 date: "2025-08-27T01:42:08+02:00"
 title: "Wifind"
 summary: "Radio fingerprinting for WiFi networks"
+repository: https://github.com/micheledinelli/wifind
 ---
 
 Wifind is a command line application that performs radio fingerprinting on WiFi networks. It can estimate your position inside buildings using known WiFi access points and their signal strengths.
 
-Source code available on [GitHub](https://github.com/micheledinelli/wifind).
-
-Install available with [pip](https://pypi.org/project/wifind/):
+### Install 
 
 ```bash {style=base16-snazzy}
 pip install wifind
 ```
 
-Example usage
+### Example usage
 
 ```bash {style=base16-snazzy}
 # learn current location labelling it as kitchen

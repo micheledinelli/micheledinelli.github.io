@@ -1,13 +1,19 @@
 ---
 date: "2025-08-27T11:11:05+02:00"
 title: "Aculei"
-summary: Hunter camera archive
+summary: An interactive hunter camera archive
+repository: https://github.com/aculei
 ---
 
-[https://aculei.xyz](https://aculei.xyz)
+See it live [https://aculei.xyz](https://aculei.xyz)
 
-aculei is an interactive photo archive based on 30.342 images (apr.25) recorded since 2020 by 7 huntercameras around the Picco dell'Aquila valley, Umbria Italy. 
+
+Aculei is interactive photo archive that collects images from 7 hunter cameras deployed around Picco dell’Aquila (Umbria, Italy).
 
 ![Website Screenshot](aculei.webp)
 
-[GitHub Organization](https://github.com/aculei)
+A zero-shot image classification model identify animals and labels images. The infrastruc-
+ture consists of a Go backend, an Angular frontend, a MongoDB database and Redis. It is hosted on a 1 vCPU
+512 MB RAM droplet and maintained regularly by me. Deployments are carried out using Ansible and Github
+actions. There is also a backend that collects analytics and it is hosted on a Google Cloud e2-micro. Frontend
+and domain records are managed using Cloudflare and Cloudflare pages
